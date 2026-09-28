@@ -1,0 +1,165 @@
+:root {
+	--paper: #f8f2e9;
+	--ink: #26352f;
+	--muted: #77756e;
+	--orange: #d95827;
+	--gold: #f2bc69;
+	--display: 'Cormorant Garamond', Georgia, serif;
+}
+
+body {
+	background-color: var(--paper);
+	background-image: linear-gradient(rgba(248,242,233,.93), rgba(248,242,233,.93)), url('../assets/portfolio/chioma-in-colour.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+.site-header {
+	background: rgba(248,242,233,.95);
+	backdrop-filter: blur(12px);
+}
+.wordmark-label, .main-nav > a, .nav-account { color: var(--orange); }
+.wordmark-label small { color: #786d60; }
+.nav-account { background: var(--orange); color: #fff; }
+.nav-account:hover { background: #bd451b; }
+
+.hero { background: transparent; }
+.hero h1,
+.intro h2,
+.section-heading h2,
+.contact-main h2,
+.reviews-layout h2,
+.service-main h3,
+.project-caption h3,
+.project-story-copy h2,
+.dialog h2 {
+	font-family: var(--display);
+	font-weight: 600;
+}
+.hero h1 { color: var(--orange); font-size: clamp(52px, 6.1vw, 82px); line-height: 1.02; }
+.hero h1 em, .intro h2 em, .section-heading h2 em, .contact-main h2 em, .dialog h2 em { color: var(--orange); }
+.hero-eyebrow, .section-kicker, .dialog-eyebrow { color: var(--orange); }
+.hero-copy > p, .intro-right > p, .reviews-note { color: #4d5b55; }
+.hero-secondary { color: #48564f; }
+.button-light { background: var(--orange); color: #fff; }
+.button-light:hover, .form-submit:hover { background: #bd451b; }
+
+.intro, .services-section, .reviews-section, .contact-section {
+	background-color: rgba(248,242,233,.91);
+	background-size: cover;
+	background-position: center 36%;
+}
+.intro {
+	background-image: linear-gradient(90deg, rgba(248,242,233,.95), rgba(248,242,233,.89)), url('../assets/portfolio/baba-at-first-light.jpg');
+}
+.services-section {
+	background-image: linear-gradient(90deg, rgba(248,242,233,.95), rgba(248,242,233,.9)), url('../assets/portfolio/blue-hour-surulere.jpg');
+}
+.reviews-section {
+	background-image: linear-gradient(90deg, rgba(248,242,233,.92), rgba(248,242,233,.88)), url('../assets/portfolio/aso-ebi-after-dark.jpg');
+}
+.contact-section {
+	background-image: linear-gradient(100deg, rgba(248,226,194,.94), rgba(248,226,194,.87)), url('../assets/portfolio/iya-agba-portrait.jpg');
+}
+.values-row, .service-list, .service-row, .contact-details { border-color: rgba(95,78,59,.2); }
+.value-number, .service-number { color: var(--orange); }
+.text-link:hover, .reviews-link:hover { color: #a93d1b; }
+.reviews-heading .review-stars { display: flex; gap: 4px; margin-bottom: 13px; color: var(--gold); }
+.reviews-layout h2 { color: var(--orange); }
+.reviews-link { padding: 0; border: 0; background: transparent; font-family: 'DM Sans', sans-serif; cursor: pointer; }
+.review-dialog { width: min(100%, 510px); }
+.review-rating { margin: 0; padding: 0; border: 0; }
+.review-rating legend { margin-bottom: 9px; color: #9c4829; font-size: 8px; font-weight: 600; letter-spacing: .65px; }
+.review-rating > div { display: flex; gap: 8px; }
+.review-rating button { padding: 3px; border: 0; background: transparent; color: var(--gold); cursor: pointer; }
+.review-rating button[aria-pressed="false"] { color: #c9c3b7; }
+.review-consent { display: grid !important; grid-template-columns: 18px 1fr; align-items: start; gap: 9px !important; color: #5f6259 !important; font-size: 10px !important; font-weight: 400 !important; letter-spacing: 0 !important; line-height: 1.6; }
+.review-consent input { width: 15px; height: 15px; min-height: 0; margin: 0; accent-color: var(--orange); }
+.service-icon { color: var(--orange); }
+.services-aside, .services-foot > span { color: #71665a; }
+.contact-section .section-kicker, .contact-top > span:last-child, .contact-details > span { color: #73503a; }
+.contact-main h2 { color: var(--orange); }
+.contact-button { border-color: var(--orange); color: var(--orange); }
+.contact-button:hover { background: var(--orange); border-color: var(--orange); color: #fff; }
+
+.work-section {
+	background-color: #152e28;
+	background-image: linear-gradient(rgba(15,43,36,.96), rgba(15,43,36,.96)), url('../assets/portfolio/aso-ebi-after-dark.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.work-section .section-heading h2 { color: #fff1dc; }
+.work-section .section-heading h2 em { color: #ff9a58; }
+.project-caption h3 { color: #ff9a58; }
+.project-note { color: #eee1d0; }
+.project-number { color: #562b19; background: #f5bd69; }
+.work-section .section-kicker, .work-section .project-type, .work-section .project-year, .work-section .work-footnote { color: #e5cdb4; }
+.project-image { border-color: rgba(242,188,105,.85); }
+.project-image::before { border-color: rgba(255,240,216,.86); }
+.project-image:hover { border-color: #ff8652; box-shadow: 0 18px 42px rgba(0,0,0,.34), 0 0 0 2px rgba(217,88,39,.75); }
+.project-image:hover .project-open { background: var(--orange); }
+.project-price {
+	margin: 2px 0 0;
+	color: #ffc078;
+	font-size: 8px;
+	font-weight: 700;
+	letter-spacing: .75px;
+}
+
+.manifesto { background-color: #bc4b29; }
+.manifesto-content {
+	background-image: linear-gradient(rgba(37,31,28,.8), rgba(37,31,28,.8)), url('../assets/portfolio/iya-agba-portrait.jpg');
+	background-size: cover;
+	background-position: center 35%;
+}
+.manifesto-content > p em { color: #ffc36f; }
+
+.account-route {
+	background-color: rgba(248,242,233,.83);
+	background-image: linear-gradient(rgba(248,242,233,.86), rgba(248,242,233,.86)), url('../assets/portfolio/baba-at-first-light.jpg');
+	background-size: cover;
+	background-position: center 34%;
+}
+.dialog {
+	background-color: rgba(255,250,241,.97);
+	background-image: linear-gradient(rgba(255,250,241,.96), rgba(255,250,241,.96)), url('../assets/portfolio/chioma-in-colour.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.dialog h2 { color: var(--orange); }
+.dialog-copy, .form-footnote, .demo-disclaimer { color: #635e55; }
+.dialog-form label { color: #9c4829; }
+.form-submit { background: var(--orange); }
+.dialog-close { background: rgba(255,250,241,.95); }
+.demo-code { background-color: #f3e1cb; }
+.auth-message { color: #38654c; font-size: 11px; line-height: 1.55; }
+.project-story-dialog { overflow-x: hidden; overflow-y: auto; }
+.project-story-note { font-size: 20px; line-height: 1.58; }
+.project-story-price {
+	margin: 20px 0 0;
+	padding: 13px 14px;
+	border-left: 3px solid var(--orange);
+	background: rgba(217,88,39,.09);
+	color: #97401f;
+	font-size: 8px;
+	font-weight: 700;
+	letter-spacing: .65px;
+}
+.project-story-price strong { display: block; margin-top: 4px; color: var(--orange); font-family: 'Cormorant Garamond', Georgia, serif; font-size: 25px; letter-spacing: 0; }
+.form-switch { color: #ad4828; }
+.dashboard-stat strong { color: var(--orange); }
+.dashboard-footnote { color: #72675b; }
+.toast { background: #a84325; }
+
+@media (max-width: 680px) {
+	.site-header, .main-nav { background-color: rgba(248,242,233,.97); }
+	.main-nav > a { color: var(--orange); }
+	.hero { background-image: linear-gradient(rgba(248,242,233,.58), rgba(248,242,233,.58)), url('../assets/portfolio/chioma-in-colour.jpg'); background-size: cover; background-position: center; }
+	.hero h1 { font-size: clamp(49px, 12vw, 68px); }
+	.project-caption h3 { color: #ff9a58; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
